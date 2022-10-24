@@ -281,7 +281,7 @@
   },
   actions: {
     CONTENTS_READ: context => {
-      return axios.get("./db.json").then(res => {
+      return axios.get("https://animis99.github.io/MSCL/db.json").then(res => {
         context.commit("setContents", res.data);
       });
     },
