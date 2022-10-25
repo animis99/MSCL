@@ -54,36 +54,28 @@ let bootstrap_ImageFlex = {
                       <table class="col-12 text-center ">   
                         <thead style="border-bottom:1px solid #555;">
                           <tr class="col-12" style="font-size:20px;">
-                            <th class="col-4">html</th>
-                            <th class="col-4">css</th>
-                            <th class="col-4">javascript</th>
+                            <th class="col-6">html</th>
+                            <th class="col-6">css</th>
                           </tr>
                           <div style="height:5px;"></div>
                         </thead>
                         <div style="height:10px;"></div>
                         <tbody>
                           <tr class="col-12" style="font-size:20px;">
-                            <td class="col-4">
+                            <td class="col-6">
                               <button type="button"  class="cbtn btn btn-outline-info "
                               @click="SendMessage(HTMLalert.type, HTMLalert.status)" 
                               v-clipboard:copy="item.html"
                               v-clipboard:success="onCopy"
                               v-clipboard:error="onError">複製</button>  
                             </td>
-                            <td class="col-4">
+                            <td class="col-6">
                               <button type="button" class="cbtn btn btn-outline-success"
                               @click="SendMessage(CSSalert.type, CSSalert.status)" 
                               v-clipboard:copy="item.css"
                               v-clipboard:success="onCopy"
                               v-clipboard:error="onError">複製</button>
-                            </td>
-                            <td class="col-4">
-                              <button type="button" class="cbtn btn btn-outline-warning"
-                              @click="SendMessage(JavaScriptTalert.type, JavaScriptTalert.status)" 
-                              v-clipboard:copy="item.javascript"
-                              v-clipboard:success="onCopy"
-                              v-clipboard:error="onError">複製</button>
-                              </td>
+                            </td>                          
                           </tr>
                         </tbody>  
                       </table>
