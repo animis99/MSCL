@@ -268,7 +268,7 @@
   },
   actions: {
     CONTENTS_READ: context => {
-      return axios.get("http://localhost:5500/db.json").then(res => {
+      return axios.get("./db.json").then(res => {
         context.commit("setContents", res.data);
       });
     },
