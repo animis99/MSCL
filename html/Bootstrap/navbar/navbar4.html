@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Navbar</title>
+ </head>
+ <body>
+  	<header class="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg p-0 navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<img src="https://demo.themefisher.com/airspace/images/logo.png" alt="Logo">
+					</a>
+
+					<button class="navbar-toggler collapsed custom-toggler" type="button" data-bs-toggle="collapse" 
+data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+ 						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown @@portfolio dropdown-submenu">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown03">
+									<li><a class="dropdown-item @@portfolioFilter" href="portfolio.html">Portfolio Filter</a></li>
+									<li><a class="dropdown-item @@portfolioSingle" href="portfolio-single.html">Portfolio Single</a></li>
+
+									<li class="dropdown dropdown-submenu dropend">
+										<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+
+										<ul class="dropdown-menu  dropdown-submenu" aria-labelledby="dropdown0301">
+											<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+											<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item @@service"><a class="nav-link" href="service.html">Service</a></li>
+							<li class="nav-item dropdown @@blog">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown05">
+									<li><a class="dropdown-item @@blogGrid" href="blog-grid.html">Blog Grid</a></li>
+									<li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li>
+									<li><a class="dropdown-item @@blogRS" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+									<li><a class="dropdown-item @@blogLS" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+									<li><a class="dropdown-item @@blogFW" href="blog-full-width.html">Blog Full Width</a></li>
+
+									<li class="dropdown dropdown-submenu dropend">
+										<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+
+										<ul class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown0501">
+											<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+											<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown @@pages">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown05">
+									<li><a class="dropdown-item @@about" href="about.html">About Us</a></li>
+									<li><a class="dropdown-item @@comingSoon" href="coming-soon.html">Coming Soon</a></li>
+									<li><a class="dropdown-item @@404" href="404.html">404 Page</a></li>
+									<li><a class="dropdown-item @@faq" href="faq.html">FAQ</a></li>
+									<li><a class="dropdown-item @@pricing" href="pricing.html">Pricing Table</a></li>
+								</ul>
+							</li>
+							<li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<div class="col-md-12 bg-dark" style="height:200px;">
+  </div>
+
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+ </body>
+ 
+ <style>	
+    body{
+	height:1000px;
+    }
+
+.navigation {
+    background: #fff;
+    padding: 10px 0;
+}
+.navigation .navbar {
+    background: none;
+    border: 0px;
+}
+.p-0 {
+    padding: 0!important;
+}
+.navigation .navbar-toggler {
+    border:0px;
+    font-size: 16px;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(132, 55, 219, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+/*
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.navigation .navbar .navbar-nav li.active > a {
+    text-decoration: underline;
+    color: #655E7A;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
+.dropdown-menu li .dropdown-submenu {
+  left: 100%;
+  top: -0px;
+}
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    transition: all .45s ease 0s;
+    opacity: 1;
+}
+.navigation .navbar .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 8%);
+    padding: 0;
+}
+.navigation .navbar .dropdown-menu a {
+    font-weight: normal;
+    color: #808080;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.navigation .navbar .navbar-nav > li > a:hover {
+    color:purple;
+}
+.navigation .navbar .navbar-nav .dropdown-menu a:hover {
+    background: #655E7A;
+    color: #fff;
+}
+.navigation .navbar .dropdown-menu a:focus{
+    background: #655E7A;
+    color: #fff;
+}
+.navigation .navbar .navbar-nav > li > a {
+    color: #5C5C5C;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.dropdown-item {
+    padding: .8rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+}
+*/
+
+
+/* 原版 */
+/**/
+
+.navbar-toggle .icon-bar {
+  background: #655E7A;
+}
+.ion-ios-arrow-down:before {
+	content:"▼";
+	font-size:4px;
+}
+header {
+  background: #fff;
+  padding: 20px 0;
+}
+
+header .navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+header .navbar-brand {
+  padding-top: 5px;
+}
+
+header .navbar-default {
+  background: none;
+  border: 0px;
+}
+
+header .navbar-default .navbar-nav {
+  padding-top: 10px;
+}
+
+header .navbar-default .navbar-nav li a {
+  color: #333333;
+  padding: 10px 26px;
+  font-size: 15px;
+}
+
+header .navbar-default .navbar-nav li a:hover {
+  color: #000;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.navigation {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.navigation .navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+.navigation .navbar-brand {
+  padding-top: 5px;
+}
+
+.navigation .navbar-toggler {
+  font-size: 16px;
+}
+
+.navigation .navbar-toggler:focus {
+  outline: 0;
+}
+
+.navigation .navbar {
+  background: none;
+  border: 0px;
+}
+
+.navigation .navbar .navbar-nav {
+  padding-top: 10px;
+}
+.dropdown-menu li .dropdown-submenu {
+  left: 100%;
+  top: -0px;
+}
+@media (max-width: 992px) {
+  .navigation .navbar .navbar-nav {
+    text-align: center;
+  }
+}
+
+.navigation .navbar .navbar-nav > li > a {
+  color: #5C5C5C;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navigation .navbar .navbar-nav > li > a:hover, .navigation .navbar .navbar-nav > li > a:focus {
+  color: #000;
+  background: transparent;
+}
+
+.navigation .navbar .navbar-nav li.active > a {
+  text-decoration: underline;
+  color: #655E7A;
+}
+
+.navigation .navbar .dropdown-menu {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .navigation .navbar .dropdown-menu {
+    text-align: center;
+    float: left !important;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.navigation .navbar .dropdown-menu li:first-child {
+  margin-top: 10px;
+}
+
+.navigation .navbar .dropdown-menu li:last-child {
+  margin-bottom: 10px;
+}
+
+.navigation .navbar .dropdown-menu a {
+  font-weight: normal;
+  color: #808080;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.navigation .navbar .dropdown-menu a:focus, .navigation .navbar .dropdown-menu a:hover {
+  background: #655E7A;
+  color: #fff;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropleft .dropdown-menu,
+.dropright .dropdown-menu {
+  margin: 0;
+}
+
+.dropleft .dropdown-toggle::before,
+.dropright .dropdown-toggle::after {
+  font-weight: bold;
+  font-family: "Ionicons";
+  border: 0;
+  font-size: 10px;
+  vertical-align: 1px;
+}
+
+.dropleft .dropdown-toggle::before {
+  content: "\f3d2";
+  margin-right: 7px;
+}
+
+.dropright .dropdown-toggle::after {
+  content: "\f3d3";
+  margin-left: 7px;
+}
+
+.dropdown-item {
+  padding: .8rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .dropdown-item {
+    padding: .6rem 1.5rem;
+  }
+}
+
+.dropdown-submenu:hover > .dropdown-item,
+.dropdown-item:hover {
+  background: #655E7A;
+  color: #fff !important;
+}
+
+.dropdown-item.active {
+  text-decoration: underline;
+  background-color: transparent;
+  color: inherit;
+}
+
+.dropdown-submenu.active > .dropdown-toggle {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul.dropdown-menu li {
+  padding-left: 0px !important;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    transition: all .2s ease-in, visibility 0s linear .2s, -webkit-transform .2s linear;
+    transition: all .2s ease-in, visibility 0s linear .2s, transform .2s linear;
+    transition: all .2s ease-in, visibility 0s linear .2s, transform .2s linear, -webkit-transform .2s linear;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 200px;
+  }
+  .dropdown-menu li:first-child {
+    margin-top: 10px;
+  }
+  .dropdown-menu li:last-child {
+    margin-bottom: 10px;
+  }
+  .dropleft .dropdown-menu,
+  .dropright .dropdown-menu {
+    margin-top: -10px;
+  }
+  .dropdown:hover > .dropdown-menu {
+    visibility: visible;
+    transition: all .45s ease 0s;
+    opacity: 1;
+  }
+}
+ </style>
+<script type="text/javascript">
+$(document).ready(function () {
+
+});
+</script>
+ </html>

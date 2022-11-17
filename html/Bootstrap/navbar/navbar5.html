@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/cd-themify-icons@0.0.1/index.css">
+  <title>Navbar</title>
+  <title>Navbar</title>
+ </head>
+ <body>
+  	<header class="sticky-top bg-white border-bottom border-default">
+   <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-white">
+         <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" width="150px" src="https://demo.themefisher.com/logbook/images/logo.png" alt="LogBook">
+         </a>
+         <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-expanded="false">
+            <i class="ti-menu"></i>
+         </button>
+
+         <div class="navbar-collapse text-center collapse" id="navigation" style="">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     homepage <i class="ti-angle-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Homepage Full Width</a>
+                     <a class="dropdown-item" href="#">Homepage Full With Left Sidebar</a>
+                     <a class="dropdown-item" href="#">Homepage Full With Right Sidebar</a>
+                     <a class="dropdown-item" href="#">Homepage List Style</a>
+                     <a class="dropdown-item" href="#">Homepage List With Left Sidebar</a>
+                     <a class="dropdown-item" href="#">Homepage List With Right Sidebar</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="ti-angle-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Author</a>
+                     <a class="dropdown-item" href="#">Post Details 1</a>
+                     <a class="dropdown-item" href="#">Post Details 2</a>
+                     <a class="dropdown-item" href="#">Post Elements</a>
+                     <a class="dropdown-item" href="#">Privacy Policy</a>
+                     <a class="dropdown-item" href="#">Terms Conditions</a>
+                  </div>
+               </li>
+            </ul>
+            
+            <select class="m-2 border-0" id="select-language">
+               <option id="en" value="about/" selected="">En</option>
+               <option id="fr" value="fr/about/">Fr</option>
+            </select>
+
+            <!-- search -->
+            <div class="search px-4">
+               <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+               <div class="search-wrapper">
+                  <form action="javascript:void(0)" class="h-100">
+                     <input class="search-box pl-4" id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
+                  </form>
+                  <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+               </div>
+            </div>
+
+         </div>
+      </nav>
+   </div>
+</header>
+
+
+<div class="col-md-12 bg-dark" style="height:200px;">
+  </div>
+
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+ </body>
+ 
+ <style>	
+    body{
+	height:1000px;
+    }
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.nav-item {
+  margin: 0;
+}
+.nav-item .nav-link {
+  text-transform: capitalize;
+}
+
+.navbar-white .navbar-nav .nav-link {
+  color: #1c1d1f;
+}
+.navbar-white .navbar-nav .nav-link:hover {
+  color: #ce8460;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 15px 20px;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleX(1);
+}
+.navbar .dropdown-menu {
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+  padding: 10px 0;
+  border: 0;
+  top: 50px;
+  left: 0px;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+  background: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: unset;
+  }
+}
+.navbar .dropdown-menu.show {
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown-menu.show {
+    visibility: visible;
+    display: block;
+  }
+}
+.navbar .dropdown-item {
+  position: relative;
+  color: #1c1d1f;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown-item {
+    text-align: center;
+  }
+}
+.navbar .dropdown-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.navbar .dropdown-item:hover {
+  color: #ce8460 !important;
+  background: transparent;
+}
+
+/* search */
+.search-btn {
+  border: 0;
+  background: transparent;
+}
+
+.search-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+.search-wrapper.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-box {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background: #fff;
+  font-size: 20px;
+  padding: 0;
+}
+.search-box:focus {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.search-close {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  page-break-after: 10px;
+  font-size: 20px;
+}
+ </style>
+<script type="text/javascript">
+(function ($) {
+	'use strict';
+	
+	// Preloader js    
+	$(window).on('load', function () {
+		$('.preloader').fadeOut(100);
+	});
+
+
+	//  Search Form Open
+	$('#searchOpen').on('click', function () {
+		$('.search-wrapper').addClass('open');
+		setTimeout(function () {
+			$('.search-box').focus();
+		}, 400);
+	});
+	$('#searchClose').on('click', function () {
+		$('.search-wrapper').removeClass('open');
+	});
+
+})(jQuery);
+</script>
+ </html>

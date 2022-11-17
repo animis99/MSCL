@@ -1,0 +1,67 @@
+body{
+	height: 1000px;
+
+}
+.swiper {
+  width: 90%;
+  height: 500px;
+  --swiper-navigation-color: #eee;
+  --swiper-pagination-color: #eee;
+}
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #ddd;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+.silder-wrap {
+  position: relative;
+}
+.sider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sider-left {
+  flex-direction: row-reverse;
+}
+.sider-rect {
+  flex: 1.5;
+  margin: 3.5rem;
+  border: solid rgb(200,210,220) 3px;
+}
+.sider-content {
+  padding:5.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(200,210,220, 0.9);
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .sider {
+	 flex-direction: column;
+  }
+  .sider-left {
+	flex-direction: column;
+  }
+}
