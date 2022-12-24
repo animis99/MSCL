@@ -3,6 +3,25 @@
 .accordion {
   color: #FFF;
   width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+.accordion::-webkit-scrollbar {/*滾動條整體樣式*/
+  width: 5px;     /*高寬分別對應橫豎滾動條的尺寸*/
+  height: 10px;
+  margin-right: 5px;
+  
+}
+.accordion::-webkit-scrollbar-thumb {/*滾動條裡面小方塊*/
+  border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
+  background: #e6e5e5;
+/* background: #3082df; */
+}
+.accordion::-webkit-scrollbar-track {/*滾動條裡面軌道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.0);
+  border-radius: 10px;
+  background: #222222;
 }
 .accordion .section {
   width: 100%;
@@ -21,10 +40,27 @@
   left: 0;
 }
 .accordion .section input[type='radio']:checked ~ .content {
-  max-height: 300px;
+  max-height: 170px;
   opacity: 1;
   z-index: 10;
+  margin-right: 1px;
   overflow-y: auto;
+}
+.accordion .section input[type='radio']:checked ~ .content::-webkit-scrollbar {/*滾動條整體樣式*/
+  width: 5px;     /*高寬分別對應橫豎滾動條的尺寸*/
+  height: 10px;
+  margin-right: 5px;
+}
+.accordion .section input[type='radio']:checked ~ .content::-webkit-scrollbar-thumb {/*滾動條裡面小方塊*/
+  border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 15px rgba(0,0,0,0);
+  background: #49c2fe;
+/* background: #3082df; */
+}
+.accordion .section input[type='radio']:checked ~ .content::-webkit-scrollbar-track {/*滾動條裡面軌道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.0);
+  border-radius: 10px;
+  background: #222222;
 }
 .accordion .section label {
   position: relative;
